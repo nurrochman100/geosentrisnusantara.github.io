@@ -832,6 +832,65 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #50d8af;
 }
 
+/* Our Workarea Section
+--------------------------------*/
+
+#workarea {
+  background: #fff;
+  padding: 30px 0;
+}
+
+#workarea .workarea-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: all ease-in-out 0.4s;
+}
+
+#workarea .workarea-item {
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#workarea .workarea-item h2 {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+#workarea .workarea-item img {
+  transition: all ease-in-out 0.4s;
+  width: 100%;
+}
+
+#workarea .workarea-item:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+#workarea .workarea-item:hover .workarea-overlay {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#workarea .workarea-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
 /* Our Portfolio Section
 --------------------------------*/
 
@@ -1054,6 +1113,60 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #team .member .social i {
+  font-size: 16px;
+  margin: 0 2px;
+}
+
+/* Our Expert Section
+--------------------------------*/
+
+#expert {
+  background: #fff;
+  padding: 30px 0 0 0;
+}
+
+#expert .member {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#expert .member .pic {
+  overflow: hidden;
+  text-align: center;
+}
+
+#expert .member .pic img {
+  max-width: 100%;
+}
+
+#expert .member .details {
+  background: #50d8af;
+  color: #fff;
+  padding: 15px;
+  border-radius: 0 0 3px 3px;
+}
+
+#expert .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+#expert .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+}
+
+#expert .member .social {
+  margin-top: 5px;
+}
+
+#expert .member .social a {
+  color: #fff;
+}
+
+#expert .member .social i {
   font-size: 16px;
   margin: 0 2px;
 }
@@ -1299,7 +1412,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #legalitas .box h4,
   #legalitas .box p {
-    margin-left: 0;
+    margin-left: 50;
     text-align: center;
   }
 
